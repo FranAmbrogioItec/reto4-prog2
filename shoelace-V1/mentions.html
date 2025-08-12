@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Cambiado a español ya que el contenido está en español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menciones - Urban Outfitters</title> <!-- Título más descriptivo -->
+    
+    <!-- Shoelace CSS y JS - Framework de componentes web -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
+    <link rel="stylesheet" href="src/css/styles.css"> <!-- Estilos personalizados -->
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="container">
+        <!-- Barra de navegación superior -->
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                    <img src="src/img/icono-reto.png" alt="Logo Urban Outfitters"> <!-- Texto alternativo mejorado -->
+                </a>
+                
+                <!-- Iconos de navegación -->
+                <div class="navbar-icons">
+                    <sl-icon name="search" title="Buscar" aria-label="Buscar"></sl-icon>
+                    <sl-icon name="person" title="Mi cuenta" aria-label="Mi cuenta"></sl-icon>
+                    <div class="cart-badge">
+                        <sl-icon name="bag" title="Carrito" aria-label="Carrito de compras"></sl-icon>
+                    </div>
+                    <sl-icon name="heart" title="Favoritos" aria-label="Favoritos"></sl-icon>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navegación principal -->
+        <nav class="main-nav" aria-label="Menú principal">
+            <sl-tab-group class="menu">
+                <sl-tab slot="nav" panel="inicio"><a href="index.html">INICIO</a></sl-tab>
+                <sl-tab slot="nav" panel="tienda"><a href="store.html">TIENDA</a></sl-tab>
+                <sl-tab slot="nav" panel="contacto"><a href="mentions.html">CONTACTO</a></sl-tab>
+            </sl-tab-group>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- Sección de Menciones -->
+        <section class="container" aria-labelledby="mentions-heading">
+            <h1 id="mentions-heading">MENCIONES</h1>
+            
+            <sl-divider style="margin-bottom: var(--sl-spacing-large);"></sl-divider>
+
+            <!-- Grid de tarjetas de equipo -->
+            <div class="products-grid" role="list"> <!-- role="list" para mejor accesibilidad -->
+                <!-- Tarjeta 1 - Francisco Ambrogio -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/fran.jpg" alt="Francisco Ambrogio - Especialista en UX/UI">
+                    
+                    <div class="mention-text">
+                        <h2>Francisco<br>Ambrogio</h2> <!-- Cambiado h5 por h2 para mejor jerarquía -->
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Especialista en diseño de experiencia de usuario e interfaces. Apasionado por crear productos digitales accesibles y fáciles de usar.
+                            </p>
+                            <sl-button variant="text" href="mailto:francisco@example.com" target="_blank">
+                                Contactar a Francisco
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">UX/UI</small>
+                    </div>
+                </sl-card>
+
+                <!-- Tarjeta 2 - Federico Arballo -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/fede.jpg" alt="Federico Arballo - Especialista en Backend">
+                    
+                    <div class="mention-text">
+                        <h2>Federico<br>Arballo</h2>
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Desarrollador backend con experiencia en sistemas escalables y arquitecturas de microservicios. Especializado en Node.js y bases de datos.
+                            </p>
+                            <sl-button variant="text" href="mailto:federico@example.com" target="_blank">
+                                Contactar a Federico
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">Backend</small>
+                    </div>
+                </sl-card>
+
+                <!-- Tarjeta 3 - Emanuel Cepeda Caceres -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/eman.jpg" alt="Emanuel Cepeda Caceres - Especialista en Frontend">
+                    
+                    <div class="mention-text">
+                        <h2>Emanuel<br>Cepeda Caceres</h2>
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Desarrollador frontend con enfoque en accesibilidad y performance. Experto en frameworks modernos como React y Vue.
+                            </p>
+                            <sl-button variant="text" href="mailto:emanuel@example.com" target="_blank">
+                                Contactar a Emanuel
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">FrontEnd</small>
+                    </div>
+                </sl-card>
+
+                <!-- Tarjeta 4 - Joaquin Rodriguez -->
+                <sl-card class="mention-cards" role="listitem">
+                    <img class="mention-img" src="src/img/rafa.jpg" alt="Joaquin Rodriguez - Especialista en Base de Datos">
+                    
+                    <div class="mention-text" style="flex: 1; padding: 0 var(--sl-spacing-medium);">
+                        <h2>Joaquin<br>Rodriguez</h2>
+                        
+                        <sl-details summary="Ver más" style="margin-bottom: var(--sl-spacing-medium);">
+                            <p style="margin-bottom: var(--sl-spacing-medium);">
+                                Experto en diseño y optimización de bases de datos relacionales y NoSQL. Especializado en PostgreSQL y MongoDB.
+                            </p>
+                            <sl-button variant="text" href="mailto:joaquin@example.com" target="_blank">
+                                Contactar a Joaquin
+                            </sl-button>
+                        </sl-details>
+                    </div>
+                    
+                    <div slot="footer" class="mention-footer">
+                        <small style="color: var(--sl-color-neutral-600);">DataBase</small>
+                    </div>
+                </sl-card>
+            </div>
+        </section>
+
+        <sl-divider></sl-divider>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>URBAN OUTFITTERS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                    <h6>Constitución 716, X5800 Río Cuarto, Córdoba, Argentina</h6>
+                    <h6>+543584643036</h6>
+                    <h6>itecriocuarto.org.ar</h6>
+                    <div class="social-links">
+                        <sl-icon name="facebook"></sl-icon>
+                        <sl-icon name="twitter"></sl-icon>
+                        <sl-icon name="instagram"></sl-icon>
+                        <sl-icon name="youtube"></sl-icon>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h5>SHOPPING</h5>
+                    <p>Your cart</p>
+                    <p>Your orders</p>
+                    <p>Compared items</p>
+                    <p>Wishlist items</p>
+                    <p>Shipping details</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>MORE LINK</h5>
+                    <p>Blog</p>
+                    <p>Gift Center</p>
+                    <p>Buying Guides</p>
+                    <p>New Arrivals</p>
+                    <p>Clearance</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>FROM THE BLOG</h5>
+                    <div class="blog-entry">
+                        <span class="blog-date">26</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                    <sl-divider></sl-divider>
+                    <div class="blog-entry">
+                        <span class="blog-date">27</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

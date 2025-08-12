@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Urban Outfitters</title> 
+    
+    <!-- Shoelace CSS y JS - Framework de componentes web -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace.js"></script>
+    <link rel="stylesheet" href="src/css/styles.css"> 
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header class="container">
+        <!-- Barra de navegación superior -->
+        <nav class="navbar" aria-label="Navegación principal">
+            <div class="navbar-content">
+<<<<<<< HEAD
+                <!-- Logo -->
+                <a href="index.html" class="navbar-brand" aria-label="Inicio">
+                    <img src="src/img/icono-reto.png" alt="Logo Urban Outfitters"> 
+=======
+                <a href="#" class="navbar-brand">
+                    <img src="src/img/icono-reto.png" alt="Logo">
+>>>>>>> ac391806c78c01b994222c021a81e0f020a1d697
+                </a>
+                
+                <!-- Iconos de navegación -->
+                <div class="navbar-icons">
+                    <sl-icon name="search" title="Buscar" aria-label="Buscar"></sl-icon>
+                    <sl-icon name="person" title="Mi cuenta" aria-label="Mi cuenta"></sl-icon>
+                    <div class="cart-badge">
+                        <sl-icon name="bag" title="Carrito" aria-label="Carrito de compras"></sl-icon>
+                    </div>
+                    <sl-icon name="heart" title="Favoritos" aria-label="Favoritos"></sl-icon>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navegación principal -->
+        <nav class="main-nav" aria-label="Menú principal">
+            <sl-tab-group class="menu">
+                <sl-tab slot="nav" panel="inicio"><a href="index.html">INICIO</a></sl-tab>
+                <sl-tab slot="nav" panel="tienda"><a href="store.html">TIENDA</a></sl-tab>
+                <sl-tab slot="nav" panel="contacto"><a href="mentions.html">CONTACTO</a></sl-tab>
+            </sl-tab-group>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- Sección de Tienda -->
+        <section class="container" aria-labelledby="store-heading">
+            <h1 id="store-heading">TIENDA</h1>
+            
+            <sl-divider style="margin-bottom: var(--sl-spacing-large);"></sl-divider>
+
+            <!-- Grid de Productos -->
+            <div class="products-grid" role="list">
+                <!-- Tarjeta Decoración -->
+                <article class="card-principal" role="listitem" aria-labelledby="decor-heading">
+                    <h2 id="decor-heading">DECORACIÓN</h2>
+                    <p>
+                        Descubre nuestra exclusiva colección de artículos de decoración para darle un toque único a tu hogar. 
+                        Desde cuadros modernos hasta jarrones artesanales.
+                    </p> <!-- Texto descriptivo real -->
+                    <sl-button variant="default" outline>VER TODOS</sl-button>
+                </article>
+                
+                <!-- Producto 1 - Sillón -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/sillon.png"
+                    alt="Sillón moderno en tela gris con diseño ergonómico"
+                    />
+                
+                    <strong>Sillón Moderno</strong><br />
+                    Diseño contemporáneo con estructura de madera maciza y tapizado en tela resistente.<br />
+                    <small>Disponible en 3 colores</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4"></sl-rating> <!-- Valoración específica -->
+                    </div>
+                </sl-card>
+
+                <!-- Producto 2 - Cuadros -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/cuadros.webp"
+                    alt="Set de 3 cuadros abstractos para decoración de pared"
+                    />
+                
+                    <strong>Cuadros Decorativos</strong><br />
+                    Set de 3 cuadros con diseño abstracto, marco negro y vidrio protector.<br />
+                    <small>Medidas: 40x60cm cada uno</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="5"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 3 - Jarrón -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/jarron-flores.png"
+                    alt="Jarrón de cerámica artesanal color terracota"
+                    />
+                
+                    <strong>Jarrón de Flores</strong><br />
+                    Jarrón artesanal de cerámica con acabado rústico, ideal para centros de mesa.<br />
+                    <small>Altura: 35cm</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 4 - Saco -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/saco.png"
+                    alt="Saco tejido a mano en lana natural color beige"
+                    />
+                
+                    <strong>Saco Tejido</strong><br />
+                    Tejido artesanalmente con lana 100% natural, perfecto para decorar tu sofá o cama.<br />
+                    <small>Material: Lana merino</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4.5"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 5 - Mesita -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/mesita-luz.webp"
+                    alt="Mesita de luz moderna en madera de roble"
+                    />
+                
+                    <strong>Mesita de Luz</strong><br />
+                    Diseño minimalista con cajón incorporado y patas metálicas. Acabado en roble natural.<br />
+                    <small>Medidas: 50x50x40cm</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="4"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Producto 6 - Mate -->
+                <sl-card class="card-overview" role="listitem">
+                    <img
+                    slot="image"
+                    src="src/img/mate.webp"
+                    alt="Set de mate premium con bombilla de alpaca"
+                    />
+                
+                    <strong>Set de Mate</strong><br />
+                    Incluye mate de calabaza curada, bombilla de alpaca y termo forrado en cuero.<br />
+                    <small>Hecho a mano</small>
+                
+                    <div slot="footer">
+                    <sl-button variant="primary" pill>Más Información</sl-button>
+                    <sl-rating value="5"></sl-rating>
+                    </div>
+                </sl-card>
+
+                <!-- Tarjeta Clientes -->
+                <article class="card-principal card-clients" role="listitem" aria-labelledby="clients-heading">
+                    <h2 id="clients-heading">NUESTROS CLIENTES</h2>
+                    <p>
+                        Lo que dicen nuestros clientes satisfechos sobre la calidad de nuestros productos 
+                        y servicio de atención personalizada.
+                    </p>
+                    <sl-button variant="default" outline>VER OPINIONES</sl-button>
+                </article>
+            </div>
+        </section>
+
+        <sl-divider></sl-divider>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>URBAN OUTFITTERS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                    <h6>Constitución 716, X5800 Río Cuarto, Córdoba, Argentina</h6>
+                    <h6>+543584643036</h6>
+                    <h6>itecriocuarto.org.ar</h6>
+                    <div class="social-links">
+                        <sl-icon name="facebook"></sl-icon>
+                        <sl-icon name="twitter"></sl-icon>
+                        <sl-icon name="instagram"></sl-icon>
+                        <sl-icon name="youtube"></sl-icon>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h5>SHOPPING</h5>
+                    <p>Your cart</p>
+                    <p>Your orders</p>
+                    <p>Compared items</p>
+                    <p>Wishlist items</p>
+                    <p>Shipping details</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>MORE LINK</h5>
+                    <p>Blog</p>
+                    <p>Gift Center</p>
+                    <p>Buying Guides</p>
+                    <p>New Arrivals</p>
+                    <p>Clearance</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>FROM THE BLOG</h5>
+                    <div class="blog-entry">
+                        <span class="blog-date">26</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                    <sl-divider></sl-divider>
+                    <div class="blog-entry">
+                        <span class="blog-date">27</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
