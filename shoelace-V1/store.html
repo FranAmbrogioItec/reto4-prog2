@@ -186,116 +186,58 @@
         <sl-divider></sl-divider>
     </main>
 
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer" aria-label="Pie de página">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Sección 1 - Información -->
                 <div class="footer-section">
                     <h3>URBAN OUTFITTERS</h3>
-                    <p>Tienda de muebles y decoración moderna con los mejores precios y calidad garantizada.</p>
-                    <address> <!-- Etiqueta semántica para información de contacto -->
-                        Constitución 716, X5800 Río Cuarto, Córdoba, Argentina<br>
-                        Tel: +543584643036<br>
-                        Email: <a href="mailto:info@itecriocuarto.org.ar">itecriocuarto.org.ar</a>
-                    </address>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                    <h6>Constitución 716, X5800 Río Cuarto, Córdoba, Argentina</h6>
+                    <h6>+543584643036</h6>
+                    <h6>itecriocuarto.org.ar</h6>
                     <div class="social-links">
-                        <sl-icon name="facebook" aria-label="Facebook"></sl-icon>
-                        <sl-icon name="twitter" aria-label="Twitter"></sl-icon>
-                        <sl-icon name="instagram" aria-label="Instagram"></sl-icon>
-                        <sl-icon name="youtube" aria-label="YouTube"></sl-icon>
+                        <sl-icon name="facebook"></sl-icon>
+                        <sl-icon name="twitter"></sl-icon>
+                        <sl-icon name="instagram"></sl-icon>
+                        <sl-icon name="youtube"></sl-icon>
                     </div>
                 </div>
 
-                <!-- Sección 2 - Compras -->
                 <div class="footer-section">
-                    <h4>COMPRAS</h4> <!-- Cambiado h5 por h4 para mejor jerarquía -->
-                    <ul class="footer-list"> <!-- Lista semántica -->
-                        <li><a href="#">Tu carrito</a></li>
-                        <li><a href="#">Tus pedidos</a></li>
-                        <li><a href="#">Productos comparados</a></li>
-                        <li><a href="#">Lista de deseos</a></li>
-                        <li><a href="#">Detalles de envío</a></li>
-                    </ul>
+                    <h5>SHOPPING</h5>
+                    <p>Your cart</p>
+                    <p>Your orders</p>
+                    <p>Compared items</p>
+                    <p>Wishlist items</p>
+                    <p>Shipping details</p>
                 </div>
 
-                <!-- Sección 3 - Enlaces -->
                 <div class="footer-section">
-                    <h4>MÁS ENLACES</h4>
-                    <ul class="footer-list">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Centro de regalos</a></li>
-                        <li><a href="#">Guías de compra</a></li>
-                        <li><a href="#">Nuevos productos</a></li>
-                        <li><a href="#">Liquidación</a></li>
-                    </ul>
+                    <h5>MORE LINK</h5>
+                    <p>Blog</p>
+                    <p>Gift Center</p>
+                    <p>Buying Guides</p>
+                    <p>New Arrivals</p>
+                    <p>Clearance</p>
                 </div>
 
-                <!-- Sección 4 - Blog -->
                 <div class="footer-section">
-                    <h4>DESDE EL BLOG</h4>
-                    <article class="blog-entry"> <!-- Etiqueta semántica article -->
-                        <time datetime="2023-05-26" class="blog-date">26</time><span> May</span>
-                        <p>Tendencias en decoración para este año que no puedes dejar pasar.</p>
-                        <span>3 comentarios</span>
-                    </article>
+                    <h5>FROM THE BLOG</h5>
+                    <div class="blog-entry">
+                        <span class="blog-date">26</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
                     <sl-divider></sl-divider>
-                    <article class="blog-entry">
-                        <time datetime="2023-05-27" class="blog-date">27</time><span> May</span>
-                        <p>Cómo combinar muebles modernos con estilos clásicos en tu hogar.</p>
-                        <span>3 comentarios</span>
-                    </article>
+                    <div class="blog-entry">
+                        <span class="blog-date">27</span><span> May</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptatem fugiat sapiente accusantium et reprehenderit placeat ex perspiciatis.</p>
+                        <span>3 comments</span>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Estilos para mejor accesibilidad -->
-    <style>
-        /* Estilos para listas del footer */
-        .footer-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .footer-list li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .footer-list a {
-            color: inherit;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        
-        .footer-list a:hover {
-            color: var(--sl-color-primary-500);
-        }
-        
-        /* Mejoras para las tarjetas de productos */
-        .card-overview {
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        
-        .card-overview:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        /* Estilos para las tarjetas principales */
-        .card-principal {
-            padding: var(--sl-spacing-large);
-            background-color: var(--sl-color-neutral-100);
-            border-radius: var(--sl-border-radius-medium);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        
-        .card-clients {
-            background-color: var(--sl-color-primary-100);
-        }
-    </style>
 </body>
 </html>
